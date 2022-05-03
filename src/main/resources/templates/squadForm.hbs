@@ -1,0 +1,44 @@
+{{#partial "content"}}
+
+                <form action="/players/new" method="post">
+                    <div class="form-group">
+                        <label for="user">Enter your Player-Hero Name</label>
+                        <input type="text" name="playerName" id="user" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="squad">Enter your userName</label>
+                        <select class="form-select my-1" name="clubName" id="squad">
+                            <option selected>Select Squad</option>
+                            <option value="liverpool">Liverpool</option>
+                            <option value="chelsea">Chelsea</option>
+                            <option value="wolves">Wolves</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Enter your Players top qualities</label>
+                        <select class="form-select my-1" name="strengths" id="position">
+                            <option selected>Choose Player Position</option>
+                            <option value="goalKeeper">GoalKeeper</option>
+                            <option value="defender">Defender</option>
+                            <option value="midFielder">MidFielder</option>
+                            <option value="striker">Striker</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Enter your Players weakness</label>
+                        <select class="form-select my-1" name="weakness" id="position">
+                            <option selected>Choose Player Position</option>
+                            <option value="GoalKeeper">GoalKeeper</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Midfielder">Mid-Fielder</option>
+                            <option value="striker">Striker</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+
+                </form>
+
+
+
+{{/partial}}
+{{>layout.hbs}}
