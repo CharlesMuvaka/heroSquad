@@ -1,0 +1,31 @@
+{{#partial "content"}}
+    <div class="row">
+
+        <div class="col-md-8 d-flex flex-wrap justify-content-between">
+            {{#each squads}}
+                <div class="card">
+                    <div class="card-header">
+                        <img class="logo" src="{{squadImage}}">
+                        <h4 class="card-title float-right mt-3">{{squadName}}</h4>
+                    </div>
+
+                    <div class="body">
+                        <div class="w-50 float-right">
+                            <h4>Team Players</h4>
+                            <p>{{squadHeroes}}</p>
+                        </div>
+                        <p class="w-50">{{squadName }}is a football club that participates in the footsal premier league. It is mostly dedicated in displaying footaball. As usual
+                        </p>
+
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="/squadForm/new">Add player</a>
+                        <p></p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}
