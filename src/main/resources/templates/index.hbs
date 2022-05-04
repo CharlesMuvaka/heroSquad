@@ -1,30 +1,25 @@
 {{#partial "content"}}
     <div class="row">
+        <h3 class="text-center mt-3">Welcome to Hero Squad</h3>
+        <p class="text-center">Enjoy all the latest footsal updates by going through the individual players that are involved with the given below teams</p>
+        {{#each squads}}
+        <div class="col-sm-3 d-flex flex-wrap">
 
-        <div class="col-md-8 d-flex flex-wrap justify-content-between">
-            {{#each squads}}
                 <div class="card">
-                    <div class="card-header">
-                        <img class="logo" src="{{squadImage}}">
-                        <h4 class="card-title float-right mt-3">{{squadName}}</h4>
+                    <h4 class="text-center">{{squadName}}</h4>
+                    <img class="logo1" src="{{squadImage}}">
+                    <p>
+                        {{squadName }}is a football club that participates in the footsal premier league. It is mostly dedicated in displaying footaball. As usual
+                    </p>
+                    <div>
+                        <h4 class="text-center">Team Players</h4>
+                        <p class="text-center">{{squadHeroes}}</p>
                     </div>
-
-                    <div class="body">
-                        <div class="w-50 float-right">
-                            <h4>Team Players</h4>
-                            <p>{{squadHeroes}}</p>
-                        </div>
-                        <p class="w-50">{{squadName }}is a football club that participates in the footsal premier league. It is mostly dedicated in displaying footaball. As usual
-                        </p>
-
-                    </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <a href="/squadForm/new">Add player</a>
-                        <p></p>
-                    </div>
+                    <button class="btn bg-info"><a href="/heroes/new">Add player</a></button>
                 </div>
-            {{/each}}
+
         </div>
+        {{/each}}
     </div>
 
 {{/partial}}
