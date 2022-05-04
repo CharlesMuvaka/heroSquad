@@ -1,0 +1,17 @@
+
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+.logo1{
+    height: 100px;
+    width: 98%;
+    border-radius: 10px;
+}
+h3{
+color: greenYellow;
+}
+a{
+text-decoration: none;
+}
