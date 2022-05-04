@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HeroAppTest {
+class HeroTest {
 
     @Test
 
@@ -16,6 +16,15 @@ class HeroAppTest {
         heroApp.addHeroes(new ArrayList<>(), hero);
 
         assertEquals(1, hero.getId());
+    }
+
+    @Test
+    public void updateChangesHeroContent() throws Exception {
+        Hero hero = new Hero("","","",25);
+
+        hero.update("charles","playing","eating",30);
+
+        assertEquals("playing", hero.getStrength());
     }
 
 
