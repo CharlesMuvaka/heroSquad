@@ -10,12 +10,20 @@
 ## Description
  <p>SquadHero is a web application that allows users to create individual heroes that can be added in a squad that participates in footsal.</p>
 
-## Installation
-### Requirements
-* Either a computer,phone,tablet or an Ipad
-* Access to the Internet
-## Technology Used
-* Java - used in writing the decryption and encryption code.
+## Prerequisites
+
+- Basic Git knowledge, including an installed version of Git.
+- Your application must run on the OpenJDK version 6, 7 or 8.
+
+## Technologies Used
+
+- Java v9
+- Gradle
+- Spark Framework
+- CSS (Bootstrap)
+- JUnit v4.12
+- Jacoco Plugin
+- Velocity Templating Engine
 ### SetUp instructions and installation
 * Clone this repository to a location in your file system.
 * Open terminal command line then navigate to the root folder of the application.
