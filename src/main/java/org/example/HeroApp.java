@@ -18,7 +18,20 @@ public class HeroApp {
         if (allHeroes != null){
             allHeroes = list;
         }
-        hero.setId(list.size());
         list.add(hero);
+        hero.setId(list.size());
+
+    }
+
+    public  Hero findById(int squadId) {
+        return  allHeroes.get(squadId);
+    }
+
+    public void clearAllHeroes(){
+        allHeroes.clear();
+    }
+
+    public void deleteHero(int squadId) {
+        allHeroes.remove(squadId);
     }
 }
