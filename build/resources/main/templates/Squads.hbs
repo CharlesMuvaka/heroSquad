@@ -1,0 +1,23 @@
+{{#partial "content"}}
+
+    <div class="row">
+        {{#each Teams}}
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5>{{squadName}}</h5>
+                    <img src="{{image}}">
+                    <p>{{squadDescription}}</p>
+                    <p></p>
+                </div>
+                <div class="card-body float-right">
+                    <h4>Team Players</h4>
+                        <p>{{players}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}

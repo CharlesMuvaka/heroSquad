@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.SquadTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-04T05:20:40" hostname="moringa-Lenovo-V110-15ISK" time="0.032">
+  <properties/>
+  <testcase name="checkHeroesInATeam()" classname="org.example.SquadTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

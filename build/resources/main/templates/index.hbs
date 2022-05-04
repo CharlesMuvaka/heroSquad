@@ -1,0 +1,26 @@
+{{#partial "content"}}
+    <div class="row">
+        <h3 class="text-center mt-3">Welcome to Hero Squad</h3>
+        <p class="text-center">Enjoy all the latest footsal updates by going through the individual players that are involved with the given below teams</p>
+        {{#each squads}}
+        <div class="col-sm-3 d-flex flex-wrap">
+
+                <div class="card">
+                    <h4 class="text-center">{{squadName}}</h4>
+                    <img class="logo1" src="{{squadImage}}">
+                    <p>
+                        {{squadName }}is a football club that participates in the footsal premier league. It is mostly dedicated in displaying footaball. As usual
+                    </p>
+                    <div>
+                        <h4 class="text-center">Team Players</h4>
+                        <p class="text-center">{{squadHeroes}}</p>
+                    </div>
+                    <button class="btn bg-info"><a href="/heroes/new">Add player</a></button>
+                </div>
+
+        </div>
+        {{/each}}
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}
